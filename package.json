@@ -1,0 +1,18 @@
+{
+  "name": "github-statistics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@simonwep/github-contributions": "0.0.1",
+    "github-api": "^3.2.0",
+    "github-followers": "^1.0.3",
+    "github-pull-requests": "^0.4.3"
+  }
+}
