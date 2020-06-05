@@ -65,7 +65,7 @@ api.on('message', function (a) {
 
         api.sendMessage({
             chat_id: a.chat.id,
-            text: "Top contributor of today: Vishwaak"
+            text: "Top contributor of today: "
         })
     }
 
@@ -73,12 +73,12 @@ api.on('message', function (a) {
 
     var getPullRequests = require('github-pull-requests');
 
-    getPullRequests("sh4nnu", 'merged')
+    getPullRequests("username", 'merged')
         .then(pullRequests => pullRequests.map(pr => pr.url))
         .then(urls =>
             api.sendMessage({
                 chat_id: a.chat.id,
-                text: "Merged pull requests of sh4nnu: \n\n"+urls.join("\n")
+                text: "Merged pull requests: \n\n"+urls.join("\n")
             }));
 
         });
